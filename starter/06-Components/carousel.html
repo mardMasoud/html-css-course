@@ -78,7 +78,8 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                
+                top: 50%;
+                cursor: pointer;
             }
             .btn-icon {
                 width: 24px;
@@ -86,14 +87,30 @@
                 stroke: #087f5b;
             }
             .btn--left {
-              top:50%;
-                transform: translate(-50%,-50%); 
-               left:0;
+                transform: translate(-50%, -50%);
+                left: 0;
             }
             .btn--right {
-              top:50%;
-                transform: translate(50%,-50%);
-                right:0;
+                transform: translate(50%, -50%);
+                right: 0;
+            }
+            .radio{
+                width: 14px;
+                height: 14px;
+               
+                border-radius: 50%;
+border:2px solid #087f5b;
+            }
+            .active{
+                background-color: #087f5b;
+            }
+            .btns{
+                display: flex;
+                gap:12px;
+                position: absolute;
+                left:50%;
+                transform: translate(-50%,0);
+                top:110%;
             }
         </style>
     </head>
@@ -141,6 +158,10 @@
                     />
                 </svg>
             </button>
+            <div class="btns">
+                <button class="radio active"></button><button class="radio"></button
+                ><button class="radio"></button><button class="radio"></button>
+            </div>
         </div>
     </body>
 </html>
