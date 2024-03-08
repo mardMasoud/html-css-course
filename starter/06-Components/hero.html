@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+            rel="stylesheet"
+        />
+
+        <title>Table Component</title>
+
+        <style>
+            /*
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+      */
+            /* 
+      MAIN COLOR: #087f5b
+      GREY COLOR: #343a40
+      */
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            html {
+                font-family: "Rubik", sans-serif;
+                color: #444;
+            }
+            header {
+                height: 100vh;
+                background-image:linear-gradient(rgba(0, 0, 0, 0.60),rgba(0, 0, 0, 0.60)), url(hero.jpg);
+
+                background-size: cover;
+                position: relative;
+                color: #fff;
+                
+            }
+            .container {
+                width: 1200px;
+                margin: 0 auto;
+            }
+            nav {
+              padding-top: 32px;
+                font-size: 20px;
+                font-weight: 700;
+                display: flex;
+                justify-content: space-between;
+                background-image: linear-gradient();
+            }
+            h1 {
+                font-size: 52px;
+                line-height: 1.06;
+                margin-bottom: 32px;
+            }
+            p {
+                font-size: 20px;
+                line-height: 1.6;
+                margin-bottom: 48px;
+            }
+            .btn:visited,
+            .btn:link {
+                font-size: 20px;
+                font-weight: 600;
+                background-color: #e67e22;
+                color: #fff;
+                text-decoration: none;
+                display: inline-block;
+                padding: 16px 32px;
+                border-radius: 9px;
+            }
+            h2 {
+                font-size: 44px;
+                margin-bottom: 48px;
+            }
+            section {
+                padding: 96px 0;
+                background-color: #f7f7f7;
+            }
+            .header-container {
+                width: 1200px;
+                position: absolute;
+
+                top: 50%;
+
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .headee-container-inner {
+                width: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav class="container" >
+                <div>LOGO</div>
+                <div>NAVIGATION</div>
+            </nav>
+            <div class="header-container">
+                <div class="headee-container-inner">
+                    <h1>A healty meal delivred to your door, every single day</h1>
+
+                    <p>
+                        THe smart 356-days-per-year food subscription that will make you eat health
+                        algain. Tailord to your personal tastes and nutritional needs
+                    </p>
+                    <a href="#" class="btn">Start eating well</a>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="container">
+                <h2>Some random heading</h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus excepturi
+                    doloremque, doloribus in alias cumque dolore quam quaerat a delectus, aut eaque
+                    itaque repudiandae facilis suscipit perferendis molestiae aliquam ad!
+                </p>
+            </div>
+        </section>
+    </body>
+</html>
