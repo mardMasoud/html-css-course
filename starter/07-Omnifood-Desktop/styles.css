@@ -298,6 +298,10 @@ body {
   box-shadow: 0 2.4rem 4.8rem rgb(0, 0, 0, 0.075);
   border-radius: 11px;
   overflow: hidden;
+  transition: all 0.4s;
+}
+.meal:hover {
+  transform: translateY(-1.2rem);
 }
 .meal-contant {
   padding: 3.2rem 4.8rem 4.8rem 4.8rem;
@@ -341,4 +345,45 @@ body {
   display: flex;
   align-items: center;
   gap: 1.6rem;
+}
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.list-icon {
+  color: #cf711f;
+  width: 3rem;
+  height: 3rem;
+}
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+.all-recpies {
+  text-align: center;
+  font-size: 1.8rem;
+}
+.link:link,
+.link:visited {
+  color: #e67e22;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  display: inline-block;
+  padding-bottom: 2px;
+  transition: all 0.3s;
+}
+.link:hover,
+.link:active {
+  color: #cf711f;
+  border-bottom: 1px solid transparent;
+}
+.center-text {
+  text-align: center;
 }
